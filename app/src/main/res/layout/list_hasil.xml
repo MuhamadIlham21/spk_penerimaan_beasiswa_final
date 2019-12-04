@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:id="@+id/tvListNisn"
+    android:text="@string/nisn_hasil"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:padding="4dp"
+    android:gravity="center"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvListNama"
+        android:text="@string/nama_hasil"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvListNisn"
+        android:textColor="#000000"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvListScore"
+        android:text="@string/score_hasil"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvListNama"
+        android:textColor="#000000"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btmKeputusan"
+        android:icon="@drawable/keputusan"
+        android:title="@string/keputusan_" />
+
+    <item
+        android:id="@+id/btmHasil"
+        android:icon="@drawable/hasil"
+        android:title="@string/hasil_" />
+
+    <item
+        android:id="@+id/btmInstruksi"
+        android:icon="@drawable/instruksi"
+        android:title="@string/log_keputusan_" />
+
+</menu>

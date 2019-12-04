@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">spk_penerimaan_beasiswa</string>
+    <string name="keputusan_">Keputusan</string>
+    <string name="hasil_">Hasil</string>
+    <string name="intruksi_">Instruksi penggunaan</string>
+    <string name="keputusan_ex">KEPUTUSAN</string>
+    <string name="rata_rata_nilai_raport">Rata-rata nilai raport </string>
+    <string name="keaktifan_dalam_organisasi">Keaktifan dalam organisasi</string>
+    <string name="aktif_rb1">Aktif</string>
+    <string name="kurang_aktif_rb1">Kurang aktif</string>
+    <string name="tidak_aktif_rb1">Tidak aktif</string>
+    <string name="banyak_penghargaan">Banyak Penghargaan</string>
+    <string name="pernah_rb2">Pernah</string>
+    <string name="tidak_pernah_rb2">Tidak Pernah</string>
+    <string name="penghasilan_ortu">Penghasilan Orangtua</string>
+    <string name="punya_rb3">Punya</string>
+    <string name="tidak_punya_rb3">Tidak Punya</string>
+    <string name="baik_rb4">Baik</string>
+    <string name="cukup_rb4">Cukup</string>
+    <string name="buruk_rb4">Buruk</string>
+    <string name="input_btn">Input</string>
+    <string name="proses_btn">Proses</string>
+    <string name="jumlah_saudara_kandung_rb3">Jumlah Saudara kandung</string>
+    <string name="nama_siswa">Nama Siswa</string>
+    <string name="nisn">NISN</string>
+    <string name="attitude">Attitude</string>
+    <string name="banyak_popup">Banyak</string>
+    <string name="nisn_hasil">NISN</string>
+    <string name="nama_hasil">Nama Siswa</string>
+    <string name="score_hasil">Score</string>
+    <string name="list_nisn">List NISN</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="delete">Delete</string>
+    <string name="log_keputusan_">Log Keputusan</string>
+</resources>

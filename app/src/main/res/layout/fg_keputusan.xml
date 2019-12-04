@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.id.spk_penerimaan_beasiswa.VerticalScrollview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!--<androidx.core.widget.NestedScrollView-->
+        <!--android:id="@+id/sc1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true"-->
+        <!--tools:ignore="UselessParent">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:text="@string/keputusan_ex"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--Nama Siswa-->
+            <TextView
+                android:id="@+id/tvNama_siswa"
+                android:text="@string/nama_siswa"
+                android:layout_below="@+id/tvHeader"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtNama"
+                android:layout_below="@+id/tvHeader"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/tvRata-rata"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <!--NISN-->
+            <TextView
+                android:id="@+id/tvNISN"
+                android:text="@string/nisn"
+                android:layout_below="@+id/tvNama_siswa"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txtNISN"
+                android:layout_below="@+id/tvNama_siswa"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/tvRata-rata"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <!--Nilai raport-->
+            <TextView
+                android:id="@+id/tvRata-rata"
+                android:text="@string/rata_rata_nilai_raport"
+                android:layout_below="@+id/tvNISN"
+                android:inputType="number"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtRaport"
+                android:layout_below="@+id/tvNISN"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/tvRata-rata"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <!--Keaktifan-->
+            <TextView
+                android:id="@+id/tvKeaktifan"
+                android:text="@string/keaktifan_dalam_organisasi"
+                android:layout_below="@+id/tvRata-rata"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rgKeaktifan"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tvKeaktifan"
+                android:layout_below="@+id/tvRata-rata"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbAktif"
+                    android:text="@string/aktif_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbKurangAktif"
+                    android:text="@string/kurang_aktif_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbTidakAktif"
+                    android:text="@string/tidak_aktif_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <!--penghargaan-->
+            <TextView
+                android:id="@+id/tvPenghargaan"
+                android:text="@string/banyak_penghargaan"
+                android:layout_below="@+id/rgKeaktifan"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rgPenghargaan"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tvKeaktifan"
+                android:layout_below="@+id/rgKeaktifan"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbPernah"
+                    android:text="@string/pernah_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbTidak_pernah"
+                    android:text="@string/tidak_pernah_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <!--penghasilan ortu-->
+            <TextView
+                android:id="@+id/tvPenghasilan"
+                android:text="@string/penghasilan_ortu"
+                android:layout_below="@+id/rgPenghargaan"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spPenghasilan"
+                android:layout_below="@+id/rgPenghargaan"
+                android:layout_toEndOf="@+id/tvPenghasilan"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <!--jumlah saudara kandung-->
+            <TextView
+                android:id="@+id/tvSaudara"
+                android:text="@string/jumlah_saudara_kandung_rb3"
+                android:layout_below="@+id/tvPenghasilan"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rgSaudara"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tvKeaktifan"
+                android:layout_below="@+id/tvPenghasilan"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbPunya"
+                    android:text="@string/punya_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbTidak_punya"
+                    android:text="@string/tidak_punya_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <!--attitude-->
+            <TextView
+                android:id="@+id/tvAttitude"
+                android:text="@string/attitude"
+                android:layout_below="@+id/rgSaudara"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rgAttitude"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tvKeaktifan"
+                android:layout_below="@+id/rgSaudara"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbBaik"
+                    android:text="@string/baik_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbCukup"
+                    android:text="@string/cukup_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbBuruk"
+                    android:text="@string/buruk_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnInput"
+                android:layout_below="@+id/rgAttitude"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/input_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btnProses"
+                android:layout_below="@+id/btnInput"
+                android:layout_marginTop="20dp"
+                android:text="@string/proses_btn"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btnProses"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="80dp"
+                android:id="@+id/ln1"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+</com.app.id.spk_penerimaan_beasiswa.VerticalScrollview>
