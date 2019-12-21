@@ -1,5 +1,6 @@
 package com.app.id.spk_penerimaan_beasiswa;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -241,6 +242,8 @@ public class fragment_keputusan extends Fragment {
                         tempInput[i][6] = JmlSaudara;
                         tempInput[i][7] = Attitude;
                         i++;
+
+                        reset();
                     }
             });
 
@@ -418,6 +421,16 @@ public class fragment_keputusan extends Fragment {
         return view;
     }
 
+    public void reset(){
+        txtNama.setText("");
+        txtNISN.setText("");
+        txtRaport.setText("");
+        rg1.clearCheck();
+        rg2.clearCheck();
+        rg3.clearCheck();
+        rg4.clearCheck();
+    }
+
     public void openReuslt(){
         fragment_hasil someFragment = new fragment_hasil();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -566,6 +579,5 @@ public class fragment_keputusan extends Fragment {
             Attitude = "1";
         }
     }
-
 
 }

@@ -1,5 +1,6 @@
 package com.app.id.spk_penerimaan_beasiswa;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -64,6 +65,7 @@ public class fragment_hasil extends Fragment {
         View view = inflater.inflate(R.layout.fg_hasil, container, false);
 
         lv = (ListView) view.findViewById(R.id.lvLog);
+
 
         a = new adapter(view.getContext() , R.layout.list_hasil , g.getHasil());
         lv.setAdapter(a);

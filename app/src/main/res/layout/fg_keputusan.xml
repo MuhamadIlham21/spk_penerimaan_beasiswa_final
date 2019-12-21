@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:fillViewport="true">
 
     <!--<androidx.core.widget.NestedScrollView-->
@@ -19,6 +20,7 @@
             <TextView
                 android:id="@+id/tvHeader"
                 android:text="@string/keputusan_ex"
+                android:textColor="#000000"
                 android:layout_marginTop="20dp"
                 android:textSize="20sp"
                 android:layout_marginBottom="20dp"
@@ -31,6 +33,7 @@
             <TextView
                 android:id="@+id/tvNama_siswa"
                 android:text="@string/nama_siswa"
+                android:textColor="#000000"
                 android:layout_below="@+id/tvHeader"
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="20dp"
@@ -53,6 +56,7 @@
             <TextView
                 android:id="@+id/tvNISN"
                 android:text="@string/nisn"
+                android:textColor="#000000"
                 android:layout_below="@+id/tvNama_siswa"
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="20dp"
@@ -77,6 +81,7 @@
                 android:id="@+id/tvRata-rata"
                 android:text="@string/rata_rata_nilai_raport"
                 android:layout_below="@+id/tvNISN"
+                android:textColor="#000000"
                 android:inputType="number"
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="20dp"
@@ -87,6 +92,7 @@
             <EditText
                 android:id="@+id/txtRaport"
                 android:layout_below="@+id/tvNISN"
+                android:textColor="#000000"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginBottom="20dp"
@@ -100,6 +106,7 @@
                 android:id="@+id/tvKeaktifan"
                 android:text="@string/keaktifan_dalam_organisasi"
                 android:layout_below="@+id/tvRata-rata"
+                android:textColor="#000000"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="20dp"
@@ -139,6 +146,7 @@
             <TextView
                 android:id="@+id/tvPenghargaan"
                 android:text="@string/banyak_penghargaan"
+                android:textColor="#000000"
                 android:layout_below="@+id/rgKeaktifan"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="20dp"
@@ -173,6 +181,7 @@
             <TextView
                 android:id="@+id/tvPenghasilan"
                 android:text="@string/penghasilan_ortu"
+                android:textColor="#000000"
                 android:layout_below="@+id/rgPenghargaan"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="20dp"
@@ -194,6 +203,7 @@
             <TextView
                 android:id="@+id/tvSaudara"
                 android:text="@string/jumlah_saudara_kandung_rb3"
+                android:textColor="#000000"
                 android:layout_below="@+id/tvPenghasilan"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="20dp"
@@ -228,6 +238,7 @@
             <TextView
                 android:id="@+id/tvAttitude"
                 android:text="@string/attitude"
+                android:textColor="#000000"
                 android:layout_below="@+id/rgSaudara"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="20dp"
@@ -266,6 +277,7 @@
 
             <Button
                 android:id="@+id/btnInput"
+                android:background="@drawable/button2"
                 android:layout_below="@+id/rgAttitude"
                 android:layout_marginTop="50dp"
                 android:layout_marginStart="20dp"
@@ -276,6 +288,7 @@
 
             <Button
                 android:id="@+id/btnProses"
+                android:background="@drawable/button2"
                 android:layout_below="@+id/btnInput"
                 android:layout_marginTop="20dp"
                 android:text="@string/proses_btn"
@@ -290,7 +303,7 @@
                 android:layout_height="40dp"
                 android:layout_below="@+id/btnProses"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="80dp"
+                android:layout_marginBottom="50dp"
                 android:id="@+id/ln1"
                 android:orientation="vertical">
             </LinearLayout>

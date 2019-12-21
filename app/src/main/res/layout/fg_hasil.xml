@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:id="@+id/rl1"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ln1"
             android:textColor="#000000"
-            android:background="#FFE600"
+            android:background="#20000000"
             android:padding="4dp"
             android:gravity="center"
             android:textStyle="bold"/>
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/tvHeader1"
             android:textColor="#000000"
-            android:background="#FFE600"
+            android:background="#20000000"
             android:padding="4dp"
             android:gravity="center"
             android:textStyle="bold"/>
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/tvHeader2"
             android:textColor="#000000"
-            android:background="#FFE600"
+            android:background="#20000000"
             android:padding="4dp"
             android:gravity="center"
             android:textStyle="bold"/>
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="28dp"
             android:layout_toEndOf="@+id/tvHeader3"
-            android:background="#FFE600"
+            android:background="#20000000"
             android:orientation="horizontal"/>
 
         <ListView

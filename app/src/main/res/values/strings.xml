@@ -32,4 +32,9 @@
     <string name="tanggal">Tanggal</string>
     <string name="delete">Delete</string>
     <string name="log_keputusan_">Log Keputusan</string>
+    <string name="keputusan_home">Keputusan</string>
+    <string name="instruksi_pemakaian_home">Instruksi Pemakaian</string>
+    <string name="creator_pacul">Creator</string>
+    <string name="spk_penerimaan_beasiswa_header">SPK Penerimaan Beasiswa</string>
+
 </resources>

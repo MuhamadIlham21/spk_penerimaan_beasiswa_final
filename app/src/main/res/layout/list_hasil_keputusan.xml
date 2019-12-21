@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="6dp"
-    app:cardElevation="6dp">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+    android:background="@drawable/border"
+    android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvHasil"
@@ -35,6 +27,4 @@
             android:layout_height="wrap_content"
             tools:ignore="RelativeOverlap" />
 
-    </RelativeLayout>
-
-</androidx.cardview.widget.CardView>
+</RelativeLayout>

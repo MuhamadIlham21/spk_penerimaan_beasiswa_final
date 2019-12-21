@@ -1,5 +1,6 @@
 package com.app.id.spk_penerimaan_beasiswa;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -62,6 +63,7 @@ public class fragment_instruksi extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.rHasil);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
 
         listHasil = new ArrayList<>();
 
